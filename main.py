@@ -7,7 +7,7 @@ from sqlalchemy.orm import sessionmaker
 import uuid
 from typing import List
 
-DATABASE_URL = "mysql+mysqlconnector://root:@database-1.crvlwakzi7le.us-east-1.rds.amazonaws.com:3306/iresident_db"
+DATABASE_URL = "mysql+mysqlconnector://admin:12345678@database-1.crvlwakzi7le.us-east-1.rds.amazonaws.com:3306/iresident_db"
 Base: DeclarativeMeta = declarative_base()
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
